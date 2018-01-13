@@ -1,0 +1,65 @@
+.menu-container {
+  padding-top: 30px;
+  background-color: $color1;
+}
+.nav {
+  background-color: $color2;
+  height: 90px;
+  .a {
+    text-transform: uppercase;
+    padding: 0 25px;
+    height: 100%;
+    font-weight: $bold;
+    color: $color4;
+    font-size: .875em;
+    &.active,
+    &:hover,
+    &:focus {
+      background-color: $color3;
+    }
+  }
+}
+
+//responsive
+
+@media screen and (max-width: 1199px) {
+  .menu-container {
+    padding-top: 25px;
+  }
+  .nav {
+    height: 80px;
+  }
+}
+@media screen and (max-width: 991px) {
+  .menu-container {
+    padding-top: 15px;
+  }
+  .nav {
+    height: 70px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .nav {
+    height: 60px;
+    .a {
+      padding: 0 15px;
+    }
+  }
+}
+@media screen and (max-width: 575px) {
+  .nav {
+    height: 50px;
+    .a {
+      font-size: .85em;
+      padding: 0 10px;
+    }
+  }
+} 
+@media screen and (max-width: 450px) {
+  .nav {
+    height: 50px;
+    .a {
+      font-size: .74em;
+    }
+  }
+}

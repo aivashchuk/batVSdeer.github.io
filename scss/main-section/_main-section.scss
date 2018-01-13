@@ -1,0 +1,75 @@
+.main-container {
+  background-color: $color1;
+  .text {
+    color: $color6;
+  }
+  .video-block {
+    padding-left: 75px;
+  }
+}
+
+.video-block-content {
+  height: 100%;
+  position: relative;
+  .video {
+    height: 100%;
+    width: 100%;
+    background-color: $color9;
+    -webkit-box-shadow: 0px -5px 73px 0px rgba(0,0,0,0.29);
+    -moz-box-shadow: 0px -5px 73px 0px rgba(0,0,0,0.29);
+    box-shadow: 0px -5px 73px 0px rgba(0,0,0,0.29);
+  }
+  .button-video {
+    position: absolute;
+    background-color: transparent;
+    border:0;
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    left: 50%;
+    top: 50%;
+    cursor: pointer;
+    z-index: 99;
+  }
+} 
+
+//responsive
+
+@media screen and (max-width: 1199px) {
+  .main-container {
+    .video-block {
+      padding-left: 55px;
+    }
+  }
+}
+@media screen and (max-width: 991px) {
+  .main-container {
+    text-align: center;
+    .text {
+      margin-left: auto;
+      margin-right: auto;
+    }
+    .video-block {
+      padding-left: 0;
+      padding-top: 45px;
+    }
+    .block {
+      flex: 0 0 100%;
+      max-width: 100%;
+    }
+  }
+
+  .video-block-content {
+    max-height: 400px;
+    margin: 0 auto;
+  } 
+}
+@media screen and (max-width: 767px) {
+  .main-container {
+    .video-block {
+      padding-top: 40px;
+    }
+  }
+}

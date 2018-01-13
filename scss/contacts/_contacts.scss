@@ -1,0 +1,88 @@
+.contacts-container {
+  overflow: hidden;
+  .text-with-line {
+    max-width: initial;
+  }
+}
+.background-right {
+  position: relative;
+  .background {
+    position: absolute;
+    left: 15px;
+    top: 0;
+    bottom: 0;
+    width: 500%;
+    background-color: $color14;
+    z-index: -1;
+  }
+  * {
+    color: #fff;
+  }
+  .block-inside {
+    padding-left: 65px;
+    height: 100%;
+    .h3 {
+      text-transform: uppercase;
+      margin-bottom: 35px;
+    }
+    .text {
+      margin-bottom: 25px;
+    }
+  }
+}
+
+//responsive
+
+@media screen and (max-width: 1199px) {
+  .background-right {
+    flex: 0 0 41.3%;
+    max-width: 41.3%;
+    .block-inside {
+      padding-left: 15px;
+      .text {
+        margin-bottom: 15px;
+      }
+    }
+  }
+  .contacts-container {
+    .block-auto {
+      flex: 0 0 50%;
+      max-width: 50%;
+      .input {
+        width: 100%;
+      }
+    }
+  }
+}
+@media screen and (max-width: 767px) {
+  .contacts-container {
+    .block-7 {
+      flex: 0 0 100%;
+      max-width: 100%;
+    }
+    .button-subscribe {
+      margin-bottom: 15px;
+    }
+  }
+  .background-right {
+    flex: 0 0 100%;
+    max-width: 100%;
+    .background {
+      max-width: 100%;
+      right: 15px;
+      width: initial!important;
+    }
+    .contact-info {
+       padding-top: 30px;
+      padding-bottom: 30px;
+    }
+  }
+}
+@media screen and (max-width:575px) {
+  .contacts-container {
+    .block-auto {
+      flex: 0 0 100%;
+      max-width: 100%;
+    }
+  }
+}

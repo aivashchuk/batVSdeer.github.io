@@ -1,0 +1,87 @@
+.ul-tablist {
+  text-align: center;
+  margin-bottom: 45px;
+  .ui-tabs-active {
+    .a {
+      color: $color8;
+    }
+  }
+  .a {
+    text-transform: uppercase;
+    padding: 0 30px;
+    font-size: 1.375em;
+    font-weight: $semi-bold;
+    color: $color11;
+    &:hover {
+      color: $color8;
+    }
+  }
+}
+
+.flex-tab {
+  margin-left: -10px;
+  margin-right: -10px;
+  .image-block {
+    background-size: cover;
+    height: 290px;
+    background-position: center;
+  }
+}
+
+//responsive
+
+@media screen and (max-width: 1199px) {
+  .ul-tablist {
+    margin-bottom: 35px;
+    .a {
+      padding: 0 20px;
+      font-size: 1.2em;
+    }
+  }
+  .flex-tab {
+    .image-block {
+      height: 240px;
+    }
+  }
+}
+@media screen and (max-width: 991px) {
+  .ul-tablist {
+    margin-bottom: 30px;
+    .a {
+      padding: 0 10px;
+      font-size: 1.1em;
+    }
+  }
+  .flex-tab {
+    .image-block {
+      height: 200px;
+    }
+  }
+}
+@media screen and (max-width: 767px) {
+  .ul-tablist {
+    .a {
+      font-size: 1.1em;
+      padding: 0 20px;
+      display: block;
+      margin-bottom: 10px;
+    }
+  }
+  .flex-tab {
+    .image-block {
+      height: 200px;
+    }
+  }
+}
+@media screen and (max-width: 575px) {
+  .ul-tablist.unstyled {
+    .li {
+      display: block;
+    }
+  }
+  .flex-tab {
+    .image-block {
+      height: 150px;
+    }
+  }
+}

@@ -1,0 +1,21 @@
+.subscribe-container {
+  background: url(../img/6.jpg) 50% 0 no-repeat fixed;
+  background-size: cover;
+}
+.subscribe-inside {
+  padding: 40px 0;
+  text-align: center;
+  .h2 {
+    color: $color7;
+  }
+}
+
+
+//responsive 
+
+@media screen and (max-width: 991px) {
+  .subscribe-container {
+    background-position: 100%!important;
+    background-attachment: local;
+  }
+}
